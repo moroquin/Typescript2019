@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="/node_modules/systemjs/dist/system.min.js"></script>
+    
+
+
+</head>
+<body>
+
+    <header class="centrar-texto">
+        <img src="./img/typeScript.png" alt="">
+    </header>
+
+
+    <main class="contenedor seccion contenido-centrado">
+        <h1 class="fnt centrar-texto"> Consulta clima</h1>
+
+        <article class="ingreso">
+            <fieldset>
+                <legend>Ingrese los datos</legend>
+                <label for="ciudad">Ciudad</label>
+                <input type="text" id="ciudad">
+                <button id="buscar">buscar</button>
+            </fieldset>
+        </article>
+
+        <article class="clima-content">
+
+            <div class="imagen">
+                    <div id="map" class="map"></div>
+            </div>        
+            <div class="texto-entrada">
+                <h2 id="ciudadv"> . . . </h2>
+                <p id="descripcion"> . . . </p>
+                <p id="temperatura"> . . . </p>
+                <p id="latlong"> . . . </p>
+            </div>
+        </article>
+    </main>
+
+
+
+    
+    
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMVve6u3zKN4wDPnFjWNTAMzhonHM7AO4&callback=initMap"
+    async defer></script>
+
+    <script src="./init.js"></script>    
+    <script src="./app.js"></script>    
+    
+
+    
+
+
+
+</body>
+</html>
