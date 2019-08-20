@@ -41,7 +41,9 @@ let buscarClima = () => {
         return;
     }
     let http = new XMLHttpRequest();
-    let apiKey = '486017f1ff19a775b2ab831ce7f1cb09';
+
+    let apiKey = 'Escriba aca su api Key';
+    
     let url = 'http://api.openweathermap.org/data/2.5/weather?q='
         + ciudad.val() +
         '&appid=' + apiKey + '&lang=es';
